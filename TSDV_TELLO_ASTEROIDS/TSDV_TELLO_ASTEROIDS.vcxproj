@@ -18,6 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\gen_classes\generic.cpp" />
+    <ClCompile Include="..\src\gen_classes\menu\menu.cpp" />
+    <ClCompile Include="..\src\gen_classes\vec2\vec2.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\gen_classes\generic.h" />
+    <ClInclude Include="..\src\gen_classes\menu\menu.h" />
+    <ClInclude Include="..\src\gen_classes\vec2\vec2.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -165,9 +176,6 @@ XCOPY "$(SolutionDir)res\assets" "$(ProjectDir)res\assets" /e /h /y /s
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

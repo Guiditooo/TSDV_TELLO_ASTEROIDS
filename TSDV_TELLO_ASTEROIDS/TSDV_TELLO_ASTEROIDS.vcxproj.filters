@@ -1,22 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Archivos de origen">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Clases Genericas">
+      <UniqueIdentifier>{0ad3af05-fc6b-49d2-99cc-5ebac221ab25}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de encabezado">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Clases Genericas\Clase Menu">
+      <UniqueIdentifier>{7de55c81-585c-4ed3-a4eb-51bdafa707b9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de recursos">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Clases Genericas\Vec2">
+      <UniqueIdentifier>{54eb2a72-29f5-48c3-9d7c-c17febe8533c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Archivos de recursos</Filter>
+    <ClCompile Include="..\src\gen_classes\generic.cpp">
+      <Filter>Clases Genericas</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\gen_classes\menu\menu.cpp">
+      <Filter>Clases Genericas\Clase Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\gen_classes\vec2\vec2.cpp">
+      <Filter>Clases Genericas\Vec2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\gen_classes\generic.h">
+      <Filter>Clases Genericas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gen_classes\menu\menu.h">
+      <Filter>Clases Genericas\Clase Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gen_classes\vec2\vec2.h">
+      <Filter>Clases Genericas\Vec2</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
